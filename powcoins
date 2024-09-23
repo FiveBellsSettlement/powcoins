@@ -9,7 +9,6 @@ import argparse
 import json
 import logging
 import math
-import os
 import socket
 import subprocess
 import sys
@@ -26,9 +25,8 @@ from verystable.core.messages import (
     hash256,
     msg_inv,
     msg_tx,
-    tx_from_hex,
 )
-from verystable.core.p2p import P2PInterface, NetworkThread, MAGIC_BYTES
+from verystable.core.p2p import P2PInterface, NetworkThread
 from verystable.core.script import (
     SIGHASH_DEFAULT,
     TaprootSignatureHash,
